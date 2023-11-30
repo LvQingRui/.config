@@ -27,7 +27,46 @@ keymaps.del("n", "<c-_>")
 -- lazyvim changelog
 keymaps.del("n", "<leader>L")
 -- highlights under cursor
-keymaps.del("n", "<leader>ui")
+-- keymaps.del("n", "<leader>ui")
+-- Resize window using <ctrl> arrow key
+keymaps.del("n", "<C-Up>")
+keymaps.del("n", "<C-down>")
+keymaps.del("n", "<C-Left>")
+keymaps.del("n", "<C-Right>")
+-- Move Lines
+keymaps.del("n", "<A-j>")
+keymaps.del("n", "<A-k>")
+keymaps.del("i", "<A-j>")
+keymaps.del("i", "<A-k>")
+keymaps.del("v", "<A-j>")
+keymaps.del("v", "<A-k>")
+-- buffers
+keymaps.del("n", "<S-h>")
+keymaps.del("n", "<S-l>")
+keymaps.del("n", "[b")
+keymaps.del("n", "]b")
+keymaps.del("n", "<leader>bb")
+keymaps.del("n", "<leader>`")
+-- Clear search, diff update and redraw
+-- taken from runtime/lua/_editor.lua
+keymaps.del("n", "<leader>ur")
+-- Add undo break-points
+keymaps.del("i", ",")
+keymaps.del("i", ".")
+keymaps.del("i", ";")
+-- new file
+keymaps.del("n", "<leader>fn")
+keymaps.del("n", "<leader>xl")
+keymaps.del("n", "<leader>xq")
+keymaps.del("n", "<leader>xL")
+keymaps.del("n", "<leader>xQ")
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+-- lazy
+keymaps.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 -- cursor movements
 keymaps.set({ "n", "v" }, "j", "h", opts)
@@ -49,7 +88,19 @@ keymaps.set({ "n", "v" }, "sj", ":set nosplitright<CR>:vsplit<CR>:set splitright
 keymaps.set({ "n", "v" }, "sl", ":set splitright<CR>:vsplit<CR>", opts)
 
 -- change the focous to another window
-keymaps.set({ "n", "v" }, "<leader>i", "<C-w>k", opts)
-keymaps.set({ "n", "v" }, "<leader>k", "<C-w>j", opts)
-keymaps.set({ "n", "v" }, "<leader>j", "<C-w>h", opts)
-keymaps.set({ "n", "v" }, "<leader>l", "<C-w>l", opts)
+keymaps.set({ "n", "v" }, "<leader>i", "<C-w>k", { desc = "focous on windows top" })
+keymaps.set({ "n", "v" }, "<leader>k", "<C-w>j", { desc = "focous on windows bottle" })
+keymaps.set({ "n", "v" }, "<leader>j", "<C-w>h", { desc = "focous on windows Left" })
+keymaps.set({ "n", "v" }, "<leader>l", "<C-w>l", { desc = "focous on windows right" })
+
+-- Resize window using <ctrl> arrow keys
+keymaps.set("n", "<C-i>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+keymaps.set("n", "<C-k>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+keymaps.set("n", "<C-j>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+keymaps.set("n", "<C-l>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+
+-- new file
+keymaps.set("n", "<leader>nf", "<cmd>enew<cr>", { desc = "New File" })
+
+-- joshuto
+keymaps.set("n", "Q", ":Joshuto<cr>", opts)
