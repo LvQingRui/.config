@@ -53,3 +53,5 @@ keymaps.del("n", "<leader>xl")
 keymaps.del("n", "<leader>xq")
 keymaps.del("n", "<leader>xL")
 keymaps.del("n", "<leader>xQ")
+-- quit all
+keymaps.del("n", "<leader>qq")

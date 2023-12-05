@@ -57,3 +57,10 @@ keymaps.set("n", "<leader>mt", "<cmd>GenTocGFM<cr>", { desc = "Generate table of
 
 -- markdown-markmap
 keymaps.set("n", "<leader>mm", "<cmd>!markmap %<cr>", { desc = "markmap current markdown" })
+
+-- quit
+keymaps.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "quit not quit all" })
+keymaps.set("n", "<leader>qa", "<cmd>quitall<cr>", { desc = "quit all" })
+
+-- neo-tree's cmd
+keymaps.set("n", "<leader>ng", "<cmd>Neotree float git_status<cr>", { desc = "neo-tree git-status" })
