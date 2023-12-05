@@ -5,65 +5,8 @@
 local keymaps = vim.keymap
 local opts = { noremap = true, silent = true }
 
--- delete the preconfig keymap
--- windows
-keymaps.del("n", "<leader>ww")
-keymaps.del("n", "<leader>wd")
-keymaps.del("n", "<leader>w-")
-keymaps.del("n", "<leader>w|")
-keymaps.del("n", "<leader>-")
-keymaps.del("n", "<leader>|")
--- Terminal Mappings
-keymaps.del("t", "<esc><esc>")
-keymaps.del("t", "<C-h>")
-keymaps.del("t", "<C-j>")
-keymaps.del("t", "<C-k>")
-keymaps.del("t", "<C-l>")
-keymaps.del("t", "<C-/>")
-keymaps.del("t", "<c-_>")
--- floating Terminal
-keymaps.del("n", "<c-/>")
-keymaps.del("n", "<c-_>")
--- lazyvim changelog
-keymaps.del("n", "<leader>L")
--- highlights under cursor
--- keymaps.del("n", "<leader>ui")
--- Resize window using <ctrl> arrow key
-keymaps.del("n", "<C-Up>")
-keymaps.del("n", "<C-down>")
-keymaps.del("n", "<C-Left>")
-keymaps.del("n", "<C-Right>")
--- Move Lines
-keymaps.del("n", "<A-j>")
-keymaps.del("n", "<A-k>")
-keymaps.del("i", "<A-j>")
-keymaps.del("i", "<A-k>")
-keymaps.del("v", "<A-j>")
-keymaps.del("v", "<A-k>")
--- buffers
-keymaps.del("n", "<S-h>")
-keymaps.del("n", "<S-l>")
-keymaps.del("n", "[b")
-keymaps.del("n", "]b")
-keymaps.del("n", "<leader>bb")
-keymaps.del("n", "<leader>`")
--- Clear search, diff update and redraw
--- taken from runtime/lua/_editor.lua
-keymaps.del("n", "<leader>ur")
--- Add undo break-points
-keymaps.del("i", ",")
-keymaps.del("i", ".")
-keymaps.del("i", ";")
--- new file
-keymaps.del("n", "<leader>fn")
-keymaps.del("n", "<leader>xl")
-keymaps.del("n", "<leader>xq")
-keymaps.del("n", "<leader>xL")
-keymaps.del("n", "<leader>xQ")
-
--------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------
+-- import the deleted keymaps
+require("config.delete-keymaps")
 
 -- lazy
 keymaps.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Lazy" })
@@ -77,7 +20,11 @@ keymaps.set({ "n", "v" }, "i", "k", opts)
 -- quickly reach the beggining and the end of the line
 keymaps.set({ "n", "v" }, "J", "0", opts)
 keymaps.set({ "n", "v" }, "L", "$", opts)
+keymaps.set({ "n", "v" }, ",.", "%", opts)
 
+-- quickly reach the beggining and the end of the line in insert mode
+keymaps.set("i", "<C-l>", "<ESC>A", opts)
+keymaps.set("i", "<C-y>", "<ESC>A {}<ESC>i<CR><ESC>ko", opts)
 -- use h to enter insert mode
 keymaps.set({ "n", "v" }, "h", "i", opts)
 
@@ -104,3 +51,9 @@ keymaps.set("n", "<leader>nf", "<cmd>enew<cr>", { desc = "New File" })
 
 -- joshuto
 keymaps.set("n", "Q", ":Joshuto<cr>", opts)
+
+-- markdown-toc
+keymaps.set("n", "<leader>mt", "<cmd>GenTocGFM<cr>", { desc = "Generate table of contents(GitHub)" })
+
+-- markdown-markmap
+keymaps.set("n", "<leader>mm", "<cmd>!markmap %<cr>", { desc = "markmap current markdown" })
