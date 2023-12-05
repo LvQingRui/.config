@@ -1,0 +1,3 @@
+return {
+  "markmap/coc-markmap",
+}
