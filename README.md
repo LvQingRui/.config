@@ -1,4 +1,14 @@
-# Jeffery's Nvim KeyMaps
+# Jeffery's Neovim Config
+
+![Jeffery's Neovim Config Logo](./imgs/neovim-logo.jpg) 
+<!-- vim-markdown-toc GFM -->
+
+* [插件按键](#插件按键)
+  * [文件预览](#文件预览)
+    * [树状文件系统-Neo-tree.Nvim](#树状文件系统-neo-treenvim)
+
+<!-- vim-markdown-toc -->
+
 中文版本
 
 ## 插件按键
