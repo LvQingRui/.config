@@ -83,7 +83,7 @@ keymap = [
 
 	# { keys = [ "'" ],		command = ":shell " },
 	{ keys = [ "S" ],		command = "shell zsh" },
-	{ keys = [ "g", "i","t" ],		command = "shell lazygit" },
+	{ keys = [ "g", "i", "t" ],		command = "shell lazygit" },
 	{ keys = [ "M" ],		command = ":mkdir " },
 	{ keys = [ "c", "n" ],		command = ":rename " },
 
@@ -118,11 +118,9 @@ keymap = [
 	{ keys = [ "g", "h" ],		command = "cd ~/" },
 	# { keys = [ "g", "p" ],		command = "cd ~/prog" },
 	# { keys = [ "g", "i" ],		command = "cd ~/Github" },
-	{ keys = [ "g", "f", "f" ],		command = "cd ~/.config" },
-	{ keys = [ "g", "f", "n" ],		command = "cd ~/.config/nvim" },
-	{ keys = [ "g", "f", "z" ],		command = "cd ~/.config/zsh" },
-	{ keys = [ "g", "f", "j" ],		command = "cd ~/.config/joshuto" },
-	{ keys = [ "g", "f", "l" ],		command = "cd ~/.config/jesseduffield/lazygit" },
+	{ keys = [ "g", "c", "g"],		command = "cd ~/.config" },
+	{ keys = [ "g", "c", "n" ],		command = "cd ~/.config/nvim" },
+	{ keys = [ "g", "c", "j" ],		command = "cd ~/.config/joshuto" },
 	{ keys = [ "?" ],		command = "help" }
 ]
 
