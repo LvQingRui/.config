@@ -22,9 +22,13 @@ keymaps.set({ "n", "v" }, "J", "0", opts)
 keymaps.set({ "n", "v" }, "L", "$", opts)
 keymaps.set({ "n", "v" }, ",.", "%", opts)
 
+-- quickly reach the up  and down hhhhh...
+keymaps.set({ "n", "v" }, "I", "5k", opts)
+keymaps.set({ "n", "v" }, "K", "5j", opts)
+
 -- quickly reach the beggining and the end of the line in insert mode
 keymaps.set("i", "<C-l>", "<ESC>A", opts)
-keymaps.set("i", "<C-y>", "<ESC>A {}<ESC>i<CR><ESC>ko", opts)
+
 -- use h to enter insert mode
 keymaps.set({ "n", "v" }, "h", "i", opts)
 
