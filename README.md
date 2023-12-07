@@ -1,7 +1,12 @@
 # Jeffery's Neovim Config
 
-![Jeffery's Neovim Config Logo](./imgs/neovim-logo.jpg) 
+![Jeffery's Neovim Config Logo](./imgs/neovim-logo.jpg)
 
+## 配色方案
+
+### [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim) 
+One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark theme for Neovim written in Lua.
+![](https://private-user-images.githubusercontent.com/1332805/277532092-12d424f8-6967-482b-8357-124b06573f18.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE5NTUzNDUsIm5iZiI6MTcwMTk1NTA0NSwicGF0aCI6Ii8xMzMyODA1LzI3NzUzMjA5Mi0xMmQ0MjRmOC02OTY3LTQ4MmItODM1Ny0xMjRiMDY1NzNmMTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDdUMTMxNzI1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjE0OGZjOGE4ZjNhZmU4YTIwNzNjZTBkNjFhNGIyNTgwYWZlZDMxODA4YTQ2YWE2Y2U4NjBiYWY4NDNhNWRkYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.bIlalO63U0IB8FlltVmyqt3qxySHJIyV4HWOuofesPM)
 ## 快捷键
 
 ### 1基础编译器特性
@@ -214,14 +219,16 @@
 
 ##### mini.bufremove
 
-
+| 快捷键 |       行为       |
+|:------:|:----------------:|
+|  `Bdd` | `删除当前缓冲区` |
 
 
 ###### 演示视频
 
 https://user-images.githubusercontent.com/24854248/173044032-7874cf95-2e41-49fb-8abe-3aa73526972f.mp4
 
-
+d
 
 
 
