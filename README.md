@@ -94,10 +94,10 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-### 插件按键
+##  插件按键
 
-#### 1文件预览
-##### [1.1 树状文件系统-Neo-tree.Nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) 
+###  文件预览
+#### [2.1.1 树状文件系统-Neo-tree.Nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) 
 
 |    快捷键    |                  行为                  |
 |:------------:|:--------------------------------------:|
@@ -149,7 +149,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-##### [1.2 Joshuto](https://github.com/kamiyaa/joshuto)
+#### [2.1.2 Joshuto](https://github.com/kamiyaa/joshuto)
 
 |  快捷键 |            行为            |
 |:-------:|:--------------------------:|
@@ -202,9 +202,9 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-#### 缓冲区插件
+###  缓冲区插件
 
-##### [Bufferline](https://github.com/akinsho/bufferline.nvim)
+#### [Bufferline](https://github.com/akinsho/bufferline.nvim)
 | 快捷键 |             行为             |
 |:------:|:----------------------------:|
 |  `Bj`  |     `转换到前一个缓冲区`     |
@@ -217,35 +217,66 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-##### mini.bufremove
+#### [mini.bufremove](https://github.com/echasnovski/mini.bufremove) 
 
 | 快捷键 |       行为       |
 |:------:|:----------------:|
 |  `Bdd` | `删除当前缓冲区` |
 
 
-###### 演示视频
+ 演示视频
 
 https://user-images.githubusercontent.com/24854248/173044032-7874cf95-2e41-49fb-8abe-3aa73526972f.mp4
 
-d
+---
 
+### 文字编辑
 
+#### [mini.surround](https://github.com/echasnovski/mini.surround) 
 
+快速、功能丰富的环绕操作。对于包含括号或引号等环绕字符的文本，可以选择其中的文本，更改或修改环绕字符等。
 
+| 快捷键 |            行为            |
+|:------:|:--------------------------:|
+|  `ma`  |       `增加环绕字符`       |
+|  `md`  |       `删除环绕字符`       |
+|  `mf`  | `查找环绕字符(向右边查找)` |
+|  `mF`  | `查找环绕字符(向左边查找)` |
+|  `mh`  |       `高亮环绕字符`       |
+|  `mr`  |       `替换环绕字符`       |
+|  `mn`  |      `搜索周围的行数`      |
 
+增加环绕字符 (string -> "string"):
 
+```
+string
+```
+按下`maiw'`:
+```
+'string'
+```
 
+为了改变环绕字符:
+```
+'string'
+```
+按下`mr'"`:
+```
+"string"
+```
+![surround演示效果](./gif/surround.gif) 
 
+---
 
-
-
-
-
-
-
-
-
+#### vim-visual-multi
+|    快捷键    |              行为             |
+|:------------:|:-----------------------------:|
+|    `<C-n>`   |           `选择单词`          |
+|  `<C-down>`  |   `创建/使用向下的垂直光标`   |
+|   `<C-up>`   |   `创建/使用向上的垂直光标`   |
+|     `n/N`    | `获取下一个/上一个出现的情况` |
+|      `q`     |   `移除当前选择的某一个内容`  |
+| `<leader>sa` |  `选择当前光标所在内容的所有` |
 
 
 

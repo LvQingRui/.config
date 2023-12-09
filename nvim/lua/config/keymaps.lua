@@ -68,3 +68,6 @@ keymaps.set("n", "<leader>qa", "<cmd>quitall<cr>", { desc = "quit all" })
 
 -- neo-tree's cmd
 keymaps.set("n", "<leader>ng", "<cmd>Neotree float git_status<cr>", { desc = "neo-tree git-status" })
+
+-- set q to nop
+keymaps.set("n", "q", "<nop>", opts)
