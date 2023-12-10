@@ -97,7 +97,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 ##  插件按键
 
 ###  文件预览
-#### [2.1.1 树状文件系统-Neo-tree.Nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) 
+#### [树状文件系统-Neo-tree.Nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) 
 
 |    快捷键    |                  行为                  |
 |:------------:|:--------------------------------------:|
@@ -149,7 +149,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-#### [2.1.2 Joshuto](https://github.com/kamiyaa/joshuto)
+#### [Joshuto](https://github.com/kamiyaa/joshuto)
 
 |  快捷键 |            行为            |
 |:-------:|:--------------------------:|
@@ -278,13 +278,27 @@ string
 |      `q`     |   `移除当前选择的某一个内容`  |
 | `<leader>sa` |  `选择当前光标所在内容的所有` |
 
+---
 
+![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example1.gif)
 
+![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example4.gif) 
 
+![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example3.gif) 
 
+![vim-visual-multi](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example4.gif) 
 
+---
 
+#### [mini.pairs](https://github.com/echasnovski/mini.pairs) 
 
+|    快捷键    |           行为          |
+|:------------:|:-----------------------:|
+| `<leader>up` | `开启/关闭自动配对字符` |
+
+演示视频：
+
+https://user-images.githubusercontent.com/24854248/173044991-18653715-9b4e-444e-a4ba-14eb80bc4e38.mp4
 
 
 

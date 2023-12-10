@@ -12,7 +12,7 @@ return {
         ["<bs>"] = "none",
         ["#"] = "none",
         ["l"] = "open",
-        ["<leader>l"] = "focus_preview",
+        ["<leader>P"] = "focus_preview",
         ["T"] = {
           "add",
           -- this command supports BASH style brace expansion ("x{a,b,c}" -> xa,xb,xc). see `:h neo-tree-file-actions` for details
