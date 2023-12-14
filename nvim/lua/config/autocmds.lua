@@ -29,7 +29,7 @@ local compileRun = function()
     vim.cmd("term luajit %")
   elseif ft == "python" then
     split()
-    vim.cmd("term python3 %")
+    vim.cmd("term python %")
   elseif ft == "html" then
     split()
     vim.cmd('term open -a "/Applications/Google Chrome.app" %')
