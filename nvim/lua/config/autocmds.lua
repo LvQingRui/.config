@@ -33,6 +33,9 @@ local compileRun = function()
   elseif ft == "html" then
     split()
     vim.cmd('term open -a "/Applications/Google Chrome.app" %')
+  elseif ft == "sh" then
+    split()
+    vim.cmd("term ./%")
     -- elseif ft == "tex" then
     -- vim.cmd(":VimtexCompile")
   end

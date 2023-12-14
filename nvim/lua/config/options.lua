@@ -6,5 +6,5 @@
 vim.g.table_mode_always_active = 1
 
 -- set the Python Path
-vim.g.PyrightSetPythonPath = "/Users/lvqingrui/anaconda3/envs/Nvim/bin/python"
-vim.g.python3_host_prog = "/Users/lvqingrui/anaconda3/envs/Nvim/bin/python"
+vim.g.PyrightSetPythonPath = "/Users/lvqingrui/anaconda3/bin/python"
+vim.g.python3_host_prog = "/Users/lvqingrui/anaconda3/bin/python"
