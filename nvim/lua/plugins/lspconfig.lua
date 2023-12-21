@@ -18,7 +18,11 @@ return {
   end,
   opts = {
     servers = {
-      pyright = {},
+      pyright = {
+        vim.cmd([[
+        let g:PyrightSetPythonPath="/Users/lvqingrui/anaconda3/bin/python"
+        ]]),
+      },
     },
     setup = {},
   },

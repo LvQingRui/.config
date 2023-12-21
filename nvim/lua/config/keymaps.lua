@@ -71,3 +71,8 @@ keymaps.set("n", "<leader>ng", "<cmd>Neotree float git_status<cr>", { desc = "ne
 
 -- set q to nop
 keymaps.set("n", "q", "<nop>", opts)
+
+-- calendar
+keymaps.set("n", "<leader>dam", "<cmd>Calendar<cr>", opts)
+keymaps.set("n", "<leader>day", "<cmd>Calendar -view=year<cr>", opts)
+keymaps.set("n", "<leader>dat", "<cmd>Calendar -view=clock<cr>", opts)
