@@ -14,7 +14,7 @@ return {
     { "Bj", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev buffer" },
     { "Bl", "<cmd>BufferLineCycleNext<cr>", desc = "Next buffer" },
     { "Bp", "<Cmd>BufferLineTogglePin<CR>", desc = "Toggle pin" },
-    { "Bdn", "<Cmd>BufferLineGroupClose ungrouped<CR>", desc = "Delete non-pinned buffers" },
+    -- { "Bdn", "<Cmd>BufferLineGroupClose ungrouped<CR>", desc = "Delete non-pinned buffers" },
     { "Bo", "<Cmd>BufferLineCloseOthers<CR>", desc = "Delete other buffers" },
   },
 }

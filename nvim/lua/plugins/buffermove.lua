@@ -4,7 +4,7 @@ return {
     { "<leader>bd", false },
     { "<leader>bD", false },
     {
-      "Bdd",
+      "Bd",
       function()
         local bd = require("mini.bufremove").delete
         if vim.bo.modified then
