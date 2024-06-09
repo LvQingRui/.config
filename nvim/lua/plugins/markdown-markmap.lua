@@ -1,3 +1,0 @@
-return {
-  "markmap/coc-markmap",
-}

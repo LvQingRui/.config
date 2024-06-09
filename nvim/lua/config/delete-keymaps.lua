@@ -26,13 +26,6 @@ keymaps.del("n", "<C-Up>")
 keymaps.del("n", "<C-down>")
 keymaps.del("n", "<C-Left>")
 keymaps.del("n", "<C-Right>")
--- Move Lines
-keymaps.del("n", "<A-j>")
-keymaps.del("n", "<A-k>")
-keymaps.del("i", "<A-j>")
-keymaps.del("i", "<A-k>")
-keymaps.del("v", "<A-j>")
-keymaps.del("v", "<A-k>")
 -- buffers
 keymaps.del("n", "<S-h>")
 keymaps.del("n", "<S-l>")
@@ -55,3 +48,6 @@ keymaps.del("n", "<leader>xL")
 keymaps.del("n", "<leader>xQ")
 -- quit all
 keymaps.del("n", "<leader>qq")
+
+keymaps.del("n", "<leader><tab>l")
+keymaps.del("n", "<leader><tab>f")
