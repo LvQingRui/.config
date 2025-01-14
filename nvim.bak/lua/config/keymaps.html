@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.6/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.6/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.6/dist/index.js"></script><script>((r) => {
+            setTimeout(r);
+          })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+                const markmap = getMarkmap();
+                window.mm = markmap.Markmap.create(
+                  "svg#mindmap",
+                  (getOptions || markmap.deriveOptions)(jsonOptions),
+                  root2
+                );
+              })(() => window.markmap,null,{"type":"root","depth":0,"content":"","children":[{"type":"paragraph","depth":1,"payload":{"lines":[0,5]},"content":"-- Keymaps are automatically loaded on the VeryLazy event<br>\n-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua<br>\n-- Add any additional keymaps here<br>\nlocal keymaps = vim.keymap<br>\nlocal opts = { noremap = true, silent = true }","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[6,8]},"content":"-- import the deleted keymaps<br>\nrequire(&quot;config.delete-keymaps&quot;)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[9,11]},"content":"-- lazy<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>L&quot;, &quot;<cmd>Lazy<cr>&quot;, { desc = &quot;Lazy&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[12,17]},"content":"-- cursor movements<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;j&quot;, &quot;h&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;k&quot;, &quot;j&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;l&quot;, &quot;l&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;i&quot;, &quot;k&quot;, opts)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[18,22]},"content":"-- quickly reach the beggining and the end of the line<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;J&quot;, &quot;0&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;L&quot;, &quot;$&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;,.&quot;, &quot;%&quot;, opts)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[23,25]},"content":"-- quickly reach the beggining and the end of the line in insert mode<br>\nkeymaps.set(&quot;i&quot;, &quot;&lt;C-l&gt;&quot;, &quot;<ESC>A&quot;, opts)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[26,28]},"content":"-- use h to enter insert mode<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;h&quot;, &quot;i&quot;, opts)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[29,34]},"content":"-- split the winodw<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;si&quot;, &quot;:set nosplitbelow<CR>:split<CR>:set splitbelow<CR>&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;sk&quot;, &quot;:set splitbelow<CR>:split<CR>&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;sj&quot;, &quot;:set nosplitright<CR>:vsplit<CR>:set splitright<CR>&quot;, opts)<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;sl&quot;, &quot;:set splitright<CR>:vsplit<CR>&quot;, opts)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[35,40]},"content":"-- change the focous to another window<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;<leader>i&quot;, &quot;&lt;C-w&gt;k&quot;, { desc = &quot;focous on windows top&quot; })<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;<leader>k&quot;, &quot;&lt;C-w&gt;j&quot;, { desc = &quot;focous on windows bottle&quot; })<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;<leader>j&quot;, &quot;&lt;C-w&gt;h&quot;, { desc = &quot;focous on windows Left&quot; })<br>\nkeymaps.set({ &quot;n&quot;, &quot;v&quot; }, &quot;<leader>l&quot;, &quot;&lt;C-w&gt;l&quot;, { desc = &quot;focous on windows right&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[41,46]},"content":"-- Resize window using <ctrl> arrow keys<br>\nkeymaps.set(&quot;n&quot;, &quot;&lt;C-i&gt;&quot;, &quot;<cmd>resize +2<cr>&quot;, { desc = &quot;Increase window height&quot; })<br>\nkeymaps.set(&quot;n&quot;, &quot;&lt;C-k&gt;&quot;, &quot;<cmd>resize -2<cr>&quot;, { desc = &quot;Decrease window height&quot; })<br>\nkeymaps.set(&quot;n&quot;, &quot;&lt;C-j&gt;&quot;, &quot;<cmd>vertical resize -2<cr>&quot;, { desc = &quot;Decrease window width&quot; })<br>\nkeymaps.set(&quot;n&quot;, &quot;&lt;C-l&gt;&quot;, &quot;<cmd>vertical resize +2<cr>&quot;, { desc = &quot;Increase window width&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[47,49]},"content":"-- new file<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>nf&quot;, &quot;<cmd>enew<cr>&quot;, { desc = &quot;New File&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[50,52]},"content":"-- joshuto<br>\nkeymaps.set(&quot;n&quot;, &quot;Q&quot;, &quot;:Joshuto<cr>&quot;, opts)","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[53,55]},"content":"-- markdown-toc<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>mt&quot;, &quot;<cmd>GenTocGFM<cr>&quot;, { desc = &quot;Generate table of contents(GitHub)&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[56,58]},"content":"-- markdown-markmap<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>mm&quot;, &quot;<cmd>!markmap %<cr>&quot;, { desc = &quot;markmap current markdown&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[59,62]},"content":"-- quit<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>qq&quot;, &quot;<cmd>q<cr>&quot;, { desc = &quot;quit not quit all&quot; })<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>qa&quot;, &quot;<cmd>quitall<cr>&quot;, { desc = &quot;quit all&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[63,65]},"content":"-- neo-tree's cmd<br>\nkeymaps.set(&quot;n&quot;, &quot;<leader>ng&quot;, &quot;<cmd>Neotree float git_status<cr>&quot;, { desc = &quot;neo-tree git-status&quot; })","children":[]},{"type":"paragraph","depth":1,"payload":{"lines":[66,68]},"content":"-- set q to nop<br>\nkeymaps.set(&quot;n&quot;, &quot;q&quot;, &quot;<nop>&quot;, opts)","children":[]}],"payload":{}},null)</script>
+</body>
+</html>

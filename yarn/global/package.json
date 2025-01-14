@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "create-umi": "^0.27.0"
+  }
+}
