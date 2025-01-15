@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   opts_extend = { "spec" },
   opts = {
-    preset = "classic",
+    preset = "modern",
     defaults = {},
     spec = {
       {
@@ -59,6 +59,8 @@ return {
       end,
       desc = "Window Hydra Mode (which-key)",
     },
+    scroll_down = "<c-d>", -- binding to scroll down inside the popup
+    scroll_up = "<c-u>", -- binding to scroll up inside the popup
   },
   config = function(_, opts)
     local wk = require("which-key")

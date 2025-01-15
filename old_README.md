@@ -4,9 +4,11 @@
 
 ## 配色方案
 
-### [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim) 
+### [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim)
+
 One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark theme for Neovim written in Lua.
 ![](https://private-user-images.githubusercontent.com/1332805/277532092-12d424f8-6967-482b-8357-124b06573f18.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE5NTUzNDUsIm5iZiI6MTcwMTk1NTA0NSwicGF0aCI6Ii8xMzMyODA1LzI3NzUzMjA5Mi0xMmQ0MjRmOC02OTY3LTQ4MmItODM1Ny0xMjRiMDY1NzNmMTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDdUMTMxNzI1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjE0OGZjOGE4ZjNhZmU4YTIwNzNjZTBkNjFhNGIyNTgwYWZlZDMxODA4YTQ2YWE2Y2U4NjBiYWY4NDNhNWRkYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.bIlalO63U0IB8FlltVmyqt3qxySHJIyV4HWOuofesPM)
+
 ## 快捷键
 
 ### 1基础编译器特性
@@ -24,6 +26,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 ---
 
 #### 1.2 最基本键位
+
 | 快捷键 |                行为                |
 |:------:|:----------------------------------:|
 |   `i`  |        `将光标向上移动一行`        |
@@ -44,6 +47,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 #### 1.3 窗口管理
 
 ##### 1.3.1 通过切分屏幕创造窗口
+
 | 快捷键 | 行为                         |
 |:--------:|:------------------------------:|
 | `si`   | `新建一个分屏并把它放在上方` |
@@ -54,6 +58,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 ---
 
 ##### 1.3.2 移动光标到不同的分屏
+
 |    快捷键   |           行为           |
 |:-----------:|:------------------------:|
 | `<leader>i` | `将光标移动至上面的分屏` |
@@ -64,6 +69,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 ---
 
 ##### 1.3.3 为分屏设置窗口大小
+
 |  快捷键 |         行为         |
 |:-------:|:--------------------:|
 | `<C-i>` | `增加当前窗口的高度` |
@@ -74,6 +80,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 ---
 
 ##### 1.3.4 关闭窗口
+
 |    快捷键    |          行为          |
 |:------------:|:----------------------:|
 | `<leader>qq` | `退出当前光标所在窗口` |
@@ -94,10 +101,11 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-##  插件按键
+## 插件按键
 
-###  文件预览
-#### [树状文件系统-Neo-tree.Nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) 
+### 文件预览
+
+#### [树状文件系统-Neo-tree.Nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 
 |    快捷键    |                  行为                  |
 |:------------:|:--------------------------------------:|
@@ -145,7 +153,7 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 |     `gp`     |               `git push`               |
 |     `gg`     |          `git_commit_and_push`         |
 
-![neo-tree演示效果](./imgs/neo-tree.jpg) 
+![neo-tree演示效果](./imgs/neo-tree.jpg)
 
 ---
 
@@ -198,13 +206,14 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 |  `gcj`  |   `cd ~/.config/joshuto`   |
 |   `?`   |         `提供帮助`         |
 
-![Joshuto演示](./imgs/Joshuto演示.png) 
+![Joshuto演示](./imgs/Joshuto演示.png)
 
 ---
 
-###  缓冲区插件
+### 缓冲区插件
 
 #### [Bufferline](https://github.com/akinsho/bufferline.nvim)
+
 | 快捷键 |             行为             |
 |:------:|:----------------------------:|
 |  `Bj`  |     `转换到前一个缓冲区`     |
@@ -217,22 +226,21 @@ One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark the
 
 ---
 
-#### [mini.bufremove](https://github.com/echasnovski/mini.bufremove) 
+#### [mini.bufremove](https://github.com/echasnovski/mini.bufremove)
 
 | 快捷键 |       行为       |
 |:------:|:----------------:|
 |  `Bdd` | `删除当前缓冲区` |
 
-
  演示视频
 
-https://user-images.githubusercontent.com/24854248/173044032-7874cf95-2e41-49fb-8abe-3aa73526972f.mp4
+<https://user-images.githubusercontent.com/24854248/173044032-7874cf95-2e41-49fb-8abe-3aa73526972f.mp4>
 
 ---
 
 ### 文字编辑
 
-#### [mini.surround](https://github.com/echasnovski/mini.surround) 
+#### [mini.surround](https://github.com/echasnovski/mini.surround)
 
 快速、功能丰富的环绕操作。对于包含括号或引号等环绕字符的文本，可以选择其中的文本，更改或修改环绕字符等。
 
@@ -251,24 +259,31 @@ https://user-images.githubusercontent.com/24854248/173044032-7874cf95-2e41-49fb-
 ```
 string
 ```
+
 按下`maiw'`:
+
 ```
 'string'
 ```
 
 为了改变环绕字符:
+
 ```
 'string'
 ```
+
 按下`mr'"`:
+
 ```
 "string"
 ```
-![surround演示效果](./gif/surround.gif) 
+
+![surround演示效果](./gif/surround.gif)
 
 ---
 
 #### vim-visual-multi
+
 |    快捷键    |              行为             |
 |:------------:|:-----------------------------:|
 |    `<C-n>`   |           `选择单词`          |
@@ -282,15 +297,15 @@ string
 
 ![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example1.gif)
 
-![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example4.gif) 
+![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example4.gif)
 
-![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example3.gif) 
+![vim-visual-multi演示效果](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example3.gif)
 
-![vim-visual-multi](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example4.gif) 
+![vim-visual-multi](https://raw.githubusercontent.com/terryma/vim-multiple-cursors/master/assets/example4.gif)
 
 ---
 
-#### [mini.pairs](https://github.com/echasnovski/mini.pairs) 
+#### [mini.pairs](https://github.com/echasnovski/mini.pairs)
 
 |    快捷键    |           行为          |
 |:------------:|:-----------------------:|
@@ -298,19 +313,4 @@ string
 
 演示视频：
 
-https://user-images.githubusercontent.com/24854248/173044991-18653715-9b4e-444e-a4ba-14eb80bc4e38.mp4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<https://user-images.githubusercontent.com/24854248/173044991-18653715-9b4e-444e-a4ba-14eb80bc4e38.mp4>
