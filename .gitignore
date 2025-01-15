@@ -2,4 +2,6 @@ clash/
 adrive/
 nvim.bak/
 raycast/
+configstore/
+iterm2/
 .DS_Store
