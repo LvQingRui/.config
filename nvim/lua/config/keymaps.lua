@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
+local delmap = vim.keymap.del
 local opts = { noremap = true, silent = true }
 
 -- 按 h 进入到插入模式
@@ -42,7 +43,27 @@ map("n", "<leader><tab>l", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 map("n", "<leader><tab>j", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
+-- Select all
+map("n", "<C-a>", "gg<S-v>G")
+
 -- q 老记录 给它干掉永远都不要用
 map("n", "q", "<nop>", opts)
 
--- 打开Lazyvim
+-- 老误触
+map("n", "<S-i>", "<nop>", opts)
+
+-- 将当前行向下或者向上移动
+-- 普通模式
+map("n", "<C-n>", ":m .+1<CR>==", { desc = "Move line down" })
+map("n", "<C-p>", ":m .-2<CR>==", { desc = "Move line up" })
+-- 插入模式
+map("i", "<C-n>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down" })
+map("i", "<C-p>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up" })
+
+-- H  --- I
+map("n", "H", "I", opts)
+--- 删除键位
+delmap("n", "<C-h>", opts)
+delmap("n", "<C-j>", opts)
+delmap("n", "<C-k>", opts)
+delmap("n", "<C-l>", opts)

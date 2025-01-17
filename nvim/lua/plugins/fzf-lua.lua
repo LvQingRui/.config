@@ -2,6 +2,7 @@ return {
   "ibhagwan/fzf-lua",
   keys = {
     { "<leader>:", false },
+
     { "<leader><space>", false },
     { "<leader>sa", false },
     { "<leader>sC", false },

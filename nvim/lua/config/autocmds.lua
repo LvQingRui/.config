@@ -44,8 +44,6 @@ local compileRun = function()
   elseif ft == "java" then
     split()
     vim.cmd("term javac % && java %< && rm %<.class")
-    -- elseif ft == "tex" then
-    -- vim.cmd(":VimtexCompile")
   end
 end
 
