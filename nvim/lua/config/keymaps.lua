@@ -62,6 +62,9 @@ map("i", "<C-p>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up" })
 
 -- H  --- I
 map("n", "H", "I", opts)
+
+-- which python env i am using
+map("n", "<leader>wp", "<cmd>:!which python<cr>", opts)
 --- 删除键位
 delmap("n", "<C-h>", opts)
 delmap("n", "<C-j>", opts)
