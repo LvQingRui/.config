@@ -8,27 +8,7 @@ return {
         opt = { automatic_installation = true },
       },
     },
-    opts = {
-      inlay_hints = { enabled = false },
-      --@type lspconfig.options
-      servers = {
-        -- Python
-        pyright = {
-          vim.cmd([[
-        let g:PyrightSetPythonPath="/Users/lvqingrui/anaconda3/bin/python"
-        ]]),
-        },
-        -- CSS
-        cssls = {},
-        tailwindcss = {
-          root_dir = function(...)
-            return require("lspconfig.util").root_pattern(".git")(...)
-          end,
-        },
-        -- html
-        html = {},
-      },
-    },
+    opts = {},
   },
 
   {
